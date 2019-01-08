@@ -12,7 +12,6 @@
     "json-server": "json-server db.json",
     "client-dev": "ng serve",
     "client-prod": "ng build --prod",
-    "server": "nodemon server.js",
     "server-dev": "npm-run-all json-server server"
   },
   "private": true,
@@ -50,6 +49,7 @@
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "angular-cli-ghpages": "^0.5.3",
     "codelyzer": "~4.2.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",

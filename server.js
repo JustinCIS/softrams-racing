@@ -8,6 +8,8 @@ var xssFilter = require('x-xss-protection');
 var nosniff = require('dont-sniff-mimetype');
 const request = require('request');
 
+var port = process.env.PORT || 8000;
+
 const app = express();
 
 app.use(cors());
@@ -68,6 +70,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/softrams-racing/index.html'));
 });
 
-app.listen('8000', () => {
+app.listen(port, () => {
   console.log('Vrrrum Vrrrum! Server starting!');
 });
